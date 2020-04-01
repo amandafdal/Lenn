@@ -6,9 +6,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    <!-- <div id="root">
       <h1>Hello world!</h1>
-    </div>
+    </div> -->
+    <header>
+      <h1> NOME DA MINHA PÁGINA</h1>
+    </header>
+    <main>
+      <section class = "mainbox">
+        <form class="input">
+          <!--<label>Insira seu texto: </label>-->
+          <input id="textinput" name="textinput" type="text" placeholder="Insira seu texto aqui" required>
+        </form>
+        <form class="offsetinput">
+          <label>Insira valor de deslocamento desejado </label><br>
+          <input id="offset" name="offset" type="number" min = "0" placeholder="escolha o deslocamento" required>
+        </form>
+        <form class="buttons">
+          <button id="encode">Cripitografar</button>
+          <button id="decode">Descriptografar</button>
+        </form>
+        <div class="textoutput">
+          <p id="encoded">mensagem teste</p>
+          <p id="decoded">mensagem teste</p>
+        </div>
+      </section>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
