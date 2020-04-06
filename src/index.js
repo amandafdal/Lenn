@@ -1,18 +1,25 @@
-//import cipher from './cipher.js';
-//console.log(cipher);
+import cipher from './cipher.js';
+console.log(cipher);
 
-let textOutput = "isso aqui vai ser o texto cifrado/decifrado";
-document.getElementById("textoutput").innerHTML = (textOutput);
+document.getElementById("encode").addEventListener("click", function(event){
 
-document.getElementById("textinput").addEventListener("input", saveInfo);
-document.getElementById("offset").addEventListener("input" , saveInfo);
+  event.preventDefault();
 
-function saveInfo() {
-  let textInput = document.getElementById("textinput").value.toUpperCase();
-  let offset = Number(document.getElementById("offset").value);
-console.log(textInput);
-console.log(offset);
-}
+  let textInput=document.getElementById("textinput").value.toUpperCase();
+  let offsetNumber=document.getElementById("offset").value;
 
-//document.getElementById("encode").addEventListener("click", encode);
-//document.getElementById("offset").addEventListener("click", decode);
+  let output= cipher.encode(offsetNumber, textInput);
+  document.getElementById("textoutput").innerHTML= output;
+
+});
+
+document.getElementById("decode").addEventListener("click", function(event){
+
+  event.preventDefault();
+
+  let textInput=document.getElementById("textinput").value.toUpperCase();
+  let offsetNumber=document.getElementById("offset").value;
+
+  let output= cipher.decode(offsetNumber, textInput);
+  document.getElementById("textoutput").innerHTML= output;
+});
