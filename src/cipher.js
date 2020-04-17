@@ -5,9 +5,12 @@ const cipher = {
       throw new TypeError ("Você precisa inserir uma informação válida.");
     }
 
+    const ascLetterA = "A".charCodeAt();
+    const alphabetSize = 26;
+
     let result= "";
     for (let letter = 0; letter < word.length; letter++) {
-      let encoded=((word[letter].charCodeAt() - 65 + shift) % 26) + 65;
+      const encoded=((word[letter].charCodeAt() - ascLetterA + shift) % alphabetSize) + ascLetterA;
       result = result + String.fromCharCode(encoded);
     }  
     return result;
@@ -18,9 +21,12 @@ const cipher = {
       throw new TypeError ("Você precisa inserir uma informação válida.");
     }
 
+    const ascLetterA = "A".charCodeAt();
+    const alphabetSize = 26;
+
     let result= "";
     for (let letter = 0; letter < word.length; letter++) {
-      let decoded=((word[letter].charCodeAt() + 65 - shift) % 26) + 65;
+      const decoded=((word[letter].charCodeAt() + ascLetterA - shift) % alphabetSize) + ascLetterA;
       result = result + String.fromCharCode(decoded);
     }  
     return result;
