@@ -5,12 +5,10 @@ html {
   background-attachment: fixed;
   background-size: cover;
 }
-
 body{
   position: relative;
 }
-
-#pagename {
+.page-name {
   font-family: 'Special Elite', cursive;
   text-align: center;
   font-size: 120px; 
@@ -18,12 +16,11 @@ body{
   margin: 50px 0px 10px 0px;
   width: 100%;
 }
-
-.mainbox {
+.main-box {
   font-family: 'Special Elite', cursive;
   border: 8px solid black;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -33,16 +30,14 @@ body{
   padding: 30px 10px 10px 10px;
 
 }
-
-#inputlabel, #offsetlabel, #buttonslabel{
-  outline: none;
+.label{
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  margin: 0em;
+  margin: 0px;
 }
-
-#textinput, #offset {
+.inputs,.buttons{
+  cursor: pointer;
   font-family: 'Special Elite', cursive;
   text-align: center;
   font-size: 15px;
@@ -52,122 +47,100 @@ body{
   border-radius: 10px;
   width: 100%;
   height: 20px;
-  margin: 10px 0px 30px 0px;
-  padding: 5px 0px 0px 0px;
+  margin: 10px 0px 30px;
+  padding-top: 5px;
 }
-
-#textinput:hover, #offset:hover, #encode:hover, #decode:hover{
+.inputs:hover,.buttons:hover{
   transition-duration: 0.3s;
   background-color: rgba(100, 100, 100, 0.3);
 }
-
-#encode, #decode {
-  font-family: 'Special Elite', cursive;
-  text-align: center;
-  font-size: 15px;
-  outline: none;
-  background-color: rgba(170, 170, 170, 0.3); 
-  border:3px solid rgb(30, 30, 30);
-  border-radius: 8px;
+.buttons {
   width: 90px;
   height: 25px;
   padding: 3px 1px 0px 0px;
   margin: 10px 5px 30px 5px;
 }
-
-#textoutput{
+.output{
   outline: none;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  width: 240px;
+  min-width: 240px;
   height: 35px;
   border: 5px solid rgb(30, 30, 30);
   border-radius: 10px;
-  margin: 10px 0px 20px 0px;
-  padding: 15px 0px 0px 0px
+  margin: 10px 0px 20px;
+  padding-top: 15px;
 }
-
 @media only screen and (min-width: 768px){
-  #pagename {
+  .page-name {
     text-align:center;
     font-size: 200px; 
     margin: 100px 0px 30px 0px;
   }
-
-  .mainbox {
+  .main-box {
     margin: 0px 80px 0px 80px;
     padding: 50px 20px 20px 20px;
   }
-
-  #inputlabel, #offsetlabel, #buttonslabel{
+  .label{
     font-size: 30px;
   }
-
-  #textinput, #offset {
+  .inputs {
     font-size: 30px;
-    outline: none;
     height: 40px;
-    margin: 10px 0px 30px 0px;
-    padding: 8px 0px 0px 0px;
+    margin: 10px 0px 30px;
+    padding-top: 8px;
   }
-
-  #encode, #decode {
+  .buttons {
     font-size: 30px;
     width: 200px;
     height: 40px;
     padding: 7px 2px 0px 0px;
     margin: 10px 5px 30px 5px;
   }
-  #textoutput{
+  .output{
     font-size: 40px;
-    width: 400px;
+    min-width: 400px;
     height: 55px;
-    margin: 10px 0px 20px 0px;
-    padding: 20px 0px 0px 0px
+    margin: 10px 0px 20px;
+    padding-top: 20px;
   }
 }
-
 @media only screen and (min-width: 982px){
-  #pagename {
+  .page-name {
     font-size: 200px; 
     margin-top: 60px;
     margin-bottom: 0px;
     width: 100%;
     height: 100%;
-  }
-  
-  .mainbox {
+  }  
+  .main-box {
     width: 60%;
     height: 20%;
     padding: 30px;
     margin: auto;
-  }
-    
-  #inputlabel, #offsetlabel, #buttonslabel{
+  }    
+  .label{
     font-size: 30px;
     margin: 0em;
-  }
-  
-  #textinput, #offset {
+  }  
+  .inputs{
     font-size: 20px;
     margin: 0px 20px 20px 0px;
-    padding: 5px 0px 0px 0px;
+    padding-top: 5px;
     width: 100%;
     height: 50px;
-  } 
-  
-  #encode, #decode {
+  }   
+  .buttons{
     font-size: 20px;
     padding-top: 3px;
     width: 260px;
     height: 40px;
-    margin: 10px 10px 10px 10px;
-  }
-  
-  #textoutput{
+    margin: 10px;
+  }  
+  .output{
     font-size: 50px;
-    width: 500px;
+    min-width: 500px;
     height: 40px;
     margin: 20px 0px 0px;
     padding: 10px;
