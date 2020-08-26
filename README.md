@@ -22,4 +22,4 @@ Layouts disponíveis:
 * Desktop
 
 ## Autoria
-Adda Fernandes 
+Amanda Fernandes 
