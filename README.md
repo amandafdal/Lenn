@@ -1,6 +1,6 @@
 # LENN 
 Web app parte do livro interativo homônimo.
-Disponível no [GitHub Pages](https://amandafdal.github.io/Lenn/)
+Disponível no [GitHub Pages](https://amandafdal.github.io/Lenn/src/)
 
 ## Usuário
 Leitoras e leitores entre 12 e 15 interessados em histórias de mistério. 
