@@ -1,6 +1,6 @@
 # LENN 
 Web app parte do livro interativo homônimo.
-Disponível no [GitHub Pages](https://amandafdal.github.io/SAP004-cipher/src/)
+Disponível no [GitHub Pages](https://amandafdal.github.io/Lenn/)
 
 ## Usuário
 Leitoras e leitores entre 12 e 15 interessados em histórias de mistério. 
