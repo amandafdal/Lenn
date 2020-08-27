@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header>
-      <h1 class="page-name"> LENN </h1>
-    </header>
     <main class="main-box">
+      <h1 class="page-name"> LENN </h1>
       <form>         
         <p class="label">Qual pista encontramos??? </p><br>
         <input  class="inputs" id="text-input" name="text-input" type="text" required><br>       
         <p class="label">Em qual ponto da cidade?</p><br>
         <input  class="inputs" id="offset" name="offset" type="number" min = "0" required><br>         
         <p class="label">Qual a orientação?</p><br>
-        <button class="buttons" id="encode">CIFRAR</button>
-        <button class="buttons" id="decode">DECIFRAR</button><br>          
+        <div class="button-container">
+          <button class="buttons" id="encode">CIFRAR</button>
+          <button class="buttons" id="decode">DECIFRAR</button>
+        </div>
+        <p class = "output" id="text-output"></p>
       </form>
-      <p class = "output" id="text-output"></p>
     </main>
     <script src="index.js" type="module"></script>
   </body>

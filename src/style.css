@@ -5,144 +5,93 @@ html {
   background-attachment: fixed;
   background-size: cover;
 }
-body{
-  position: relative;
-}
-.page-name {
-  font-family: 'Special Elite', cursive;
-  text-align: center;
-  font-size: 120px; 
-  font-weight: bold;
-  margin: 50px 0px 10px 0px;
-  width: 100%;
-}
 .main-box {
-  font-family: 'Special Elite', cursive;
-  border: 8px solid black;
-  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
   align-items: center;
-  margin: 0px 20px 0px 20px;
-  padding: 30px 10px 10px 10px;
-
+  margin-top: 40px;
+  padding: 10px;
+  width: 85%;
+  min-height: fit-content;
+}
+.page-name {
+  text-align: center;
+  font-size: 80px; 
+  margin-top: 20px;
+  width: 100%;
 }
 .label{
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
-  margin: 0px;
 }
 .inputs,.buttons{
   cursor: pointer;
-  font-family: 'Special Elite', cursive;
   text-align: center;
   font-size: 15px;
   outline: none;
   background-color: rgba(170, 170, 170, 0.3);
-  border: 3px solid rgb(30, 30, 30);
-  border-radius: 10px;
-  width: 100%;
-  height: 20px;
-  margin: 10px 0px 30px;
-  padding-top: 5px;
+  border: 2px solid rgb(30, 30, 30);
+  border-radius: 5px;
 }
 .inputs:hover,.buttons:hover{
   transition-duration: 0.3s;
   background-color: rgba(100, 100, 100, 0.3);
 }
+.button-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.inputs
+  ::-webkit-inner-spin-button, 
+  ::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+.inputs {
+  width: 100%;
+  margin-bottom: 25px;
+  padding-top: 5px;
+}
 .buttons {
-  width: 90px;
-  height: 25px;
-  padding: 3px 1px 0px 0px;
-  margin: 10px 5px 30px 5px;
+  width: 100px;
+  padding-top: 3px;
+  margin: 10px;
 }
 .output{
   outline: none;
   text-align: center;
   font-size: 20px;
-  font-weight: bold;
-  min-width: 240px;
-  height: 35px;
-  border: 5px solid rgb(30, 30, 30);
-  border-radius: 10px;
-  margin: 10px 0px 20px;
-  padding-top: 15px;
+  width: 100%;
+  min-height: 30px;
+  background-color: rgba(170, 170, 170, 0.3);
+  margin: 10px 0 10px;
+  padding-top: 10px;
 }
 @media only screen and (min-width: 768px){
-  .page-name {
-    text-align:center;
-    font-size: 200px; 
-    margin: 100px 0px 30px 0px;
-  }
   .main-box {
-    margin: 0px 80px 0px 80px;
-    padding: 50px 20px 20px 20px;
+    margin-top: 80px;
+    padding: 20px;
+    width: 70%;
+  }
+  .page-name {
+    font-size: 150px; 
+    margin-top: 40px;
   }
   .label{
     font-size: 30px;
   }
   .inputs {
     font-size: 30px;
-    height: 40px;
-    margin: 10px 0px 30px;
     padding-top: 8px;
   }
   .buttons {
     font-size: 30px;
     width: 200px;
-    height: 40px;
-    padding: 7px 2px 0px 0px;
-    margin: 10px 5px 30px 5px;
+    padding-top: 7px;
   }
   .output{
     font-size: 40px;
-    min-width: 400px;
-    height: 55px;
-    margin: 10px 0px 20px;
-    padding-top: 20px;
-  }
-}
-@media only screen and (min-width: 982px){
-  .page-name {
-    font-size: 200px; 
-    margin-top: 60px;
-    margin-bottom: 0px;
-    width: 100%;
-    height: 100%;
-  }  
-  .main-box {
-    width: 60%;
-    height: 20%;
-    padding: 30px;
-    margin: auto;
-  }    
-  .label{
-    font-size: 30px;
-    margin: 0em;
-  }  
-  .inputs{
-    font-size: 20px;
-    margin: 0px 20px 20px 0px;
-    padding-top: 5px;
-    width: 100%;
-    height: 50px;
-  }   
-  .buttons{
-    font-size: 20px;
-    padding-top: 3px;
-    width: 260px;
-    height: 40px;
-    margin: 10px;
-  }  
-  .output{
-    font-size: 50px;
-    min-width: 500px;
-    height: 40px;
-    margin: 20px 0px 0px;
-    padding: 10px;
+    min-height: 55px;
   }
 }
